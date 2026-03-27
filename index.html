@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<title>STAR LANGUAGE ARTS LTD</title>
+
+<meta name="description" content="Star Language Arts offers IELTS, TOEFL, PTE, and SAT coaching, proofreading, and language acquisition services to help you succeed.">
+
+<meta name="keywords" content="IELTS coaching Nigeria, TOEFL training, SAT preparation, proofreading services, English language training">
+
+<meta name="author" content="Star Language Arts Ltd">
+
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+
+      <div class="brand" style="margin-right:auto;">
+          <div class="logo-wrap" aria-hidden="true">
+            <img src="Images/logo.png" alt="Star Language Arts official logo">
+          </div>
+
+          <div class="titles">
+            <p class="name">STAR LANGUAGE ARTS LTD</p>
+            <p class="sub">Proficiency Examinations • Language Acquisition • Editing and Proofreading</p>
+          </div>
+      </div>
+
+      <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About us</a>
+
+            <div class="nav-dropdown">
+                <a href="index.html#services" class="dropdown-trigger">
+                  Services <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                  <a href="index.html#IELTS">IELTS</a>
+                  <a href="index.html#TOEFL">TOEFL</a>
+                  <a href="index.html#PTE">PTE</a>
+                  <a href="index.html#SAT">SAT</a>                  
+                  <a href="index.html#Registrations" onclick="closeMenu()">Registrations</a>
+                  <a href="index.html#Editing">Editing & Proofreading</a>
+                  <a href="index.html#Language">Language Acquisition</a>
+                  <a href="index.html#Other">Other Services</a>
+                </div>
+            </div>
+
+             <div class="nav-dropdown">
+                <a href="#article" class="dropdown-trigger">
+                  Articles <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                  <a href="blog1.html">English Proficiency Strategies </a>
+                  <a href="blog2.html">Mastering English Proficiency Exams</a>
+                </div>
+            </div>
+
+            <a href="index.html#contact">Contact Us</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" id="hamburgerBtn">
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+  </div>
+</header>
+
+<aside id="mobile-menu" class="sidebar" aria-hidden="true" role="dialog" aria-label="Mobile menu">
+  <div class="close-row">
+    <button class="close-btn" aria-label="Close menu" id="closeBtn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.89 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z"/>
+      </svg>
+    </button>
+  </div>
+
+    <nav class="sidebar-nav" role="navigation" aria-label="Mobile primary">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="index.html#about" onclick="closeMenu()">About us</a>
+
+    <div class="sidebar-dropdown">
+  <button class="sidebar-trigger" onclick="toggleDropdown('servicesMenu', this)">
+    Services <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
+  <div class="sidebar-submenu" id="servicesMenu">
+    <a href="index.html#IELTS" onclick="closeMenu()">IELTS</a>
+    <a href="index.html#TOEFL" onclick="closeMenu()">TOEFL</a>
+    <a href="index.html#PTE" onclick="closeMenu()">PTE</a>
+    <a href="index.html#SAT" onclick="closeMenu()">SAT</a>
+    <a href="index.html#Registrations" onclick="closeMenu()">Registrations</a>
+    <a href="index.html#Editing" onclick="closeMenu()">Editing & Proofreading</a>
+    <a href="index.html#Language" onclick="closeMenu()">Language Acquisition</a>
+    <a href="index.html#Other" onclick="closeMenu()">Other Services</a>
+  </div>
+</div>
+
+
+<div class="sidebar-dropdown">
+  <button class="sidebar-trigger" onclick="toggleDropdown('articlesMenu', this)">
+    Articles <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
+  <div class="sidebar-submenu" id="articlesMenu">
+    <a href="blog1.html">English Proficiency Strategies</a>
+    <a href="blog2.html">Mastering English Proficiency Exams</a>
+  </div>
+</div>
+
+
+    <a href="index.html#contact" onclick="closeMenu()">Contacts</a>
+  </nav>
+
+  <div style="padding-top:8px;border-top:1px solid rgba(255,255,255,0.03); font-size:13px; color:rgba(255,255,255,0.75);">
+    <div style="margin-top:10px;">© STAR LANGUAGE ARTS LTD</div>
+  </div>
+</aside>
+
+<div class="overlay" id="overlay" aria-hidden="true" onclick="closeMenu()"></div>
+
+<main id="home" class="page-content">
+    <h1 style="display:none;">IELTS, TOEFL, SAT & English Coaching in Nigeria</h1>
+
+    <div class="slideshow-container">
+
+        <div class="slide active">
+            <div class="blur-bg" style="background-image: url('./Images/slide1.jpg');"></div>
+            <img src="Images/slide1.jpg" alt="Students learning English language">
+        </div>
+
+        <div class="slide">
+            <div class="blur-bg" style="background-image: url('./Images/slide2.jpg');"></div>
+            <img src="Images/slide2.jpg" alt="IELTS coaching class session">
+        </div>
+
+        <div class="slide">
+            <div class="blur-bg" style="background-image: url('./Images/slide3.jpg');"></div>
+            <img src="Images/slide3.jpg" alt="Language training session">
+        </div>
+
+        <div class="slide">
+            <div class="blur-bg" style="background-image: url('./Images/slide4.jpg');"></div>
+            <img src="Images/slide4.jpg" alt="Students preparing for exams">
+        </div>
+
+        <div class="slide">
+            <div class="blur-bg" style="background-image: url('./Images/slide5.jpg');"></div>
+            <img src="Images/slide5.jpg" alt="English coaching and tutoring">
+        </div>
+
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+</main>
+
+<section id="about" class="about-us">
+  <h2>About Us – Star Language Arts</h2>
+
+    <div class="video-container">
+      <video autoplay muted loop playsinline poster="thumbnail.jpg">
+        <source src="Video/video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+     <div class="about-text">
+    <p>At Star Language Arts, we are passionate about helping individuals unlock global opportunities through language proficiency and effective communication. Our academy specializes in preparing students for internationally recognized English and French proficiency examinations, providing expert guidance, structured training, and the confidence needed to achieve outstanding results.</p>
+    
+    <p>We offer comprehensive preparation programs for major English language tests such as the <strong>International English Language Testing System (IELTS)</strong> and the <strong>Test of English as a Foreign Language (TOEFL)</strong>, as well as French language proficiency tests including the <strong>Test d’Évaluation de Français (TEF)</strong> and the <strong>Diplôme d’Études en Langue Française (DELF)</strong>. Our training programs are designed to equip students with the skills required to succeed academically, professionally, and internationally.</p>
+    
+    <p>Beyond exam preparation, Star Language Arts is a vibrant hub for language learning and cultural exchange. We offer courses in several global and regional languages, including German, Igbo, Hausa, Mandarin Chinese, and more, helping learners broaden their horizons and connect with people across cultures.</p>
+    
+    <p>Our teaching approach combines experienced instructors, interactive learning methods, and practical language use to ensure that every learner gains real-world communication skills. Whether you are preparing for an international exam, planning to study abroad, advancing your career, or simply learning a new language for personal growth, Star Language Arts provides the support and expertise you need to succeed.</p>
+    
+    <p>At Star Language Arts, we believe that language is the bridge to global opportunities, and we are committed to helping our students cross that bridge with confidence.</p>
+  </div>
+
+    <div class="about-container">
+
+        <div class="about-image">
+            <img src="Images/pp1.jpg" alt="English coach and language expert">
+        </div>
+
+        <div class="about-content">
+            <h2>MEET ME</h2>
+             <p>I wear many hats, and they all have language written on them.</p>
+                <p>As a university administrator, English coach, academic editor, researcher, and content creator, 
+                  I spend most of my time helping people speak clearly, write purposefully, and understand language 
+                  better, whether for exams, academic work, public presentations, or everyday use.</p>
+                <p>
+                  <h3>I enjoy working with individuals and institutions to:</h3>
+                  <ol>
+                    <li>prepare for IELTS and other English proficiency exams</li>
+                    <li>edit and proofread theses, manuscripts, and professional documents</li>
+                    <li> explore how language works across contexts, cultures, and communities</li>
+                    <li>create engaging, accessible content on my YouTube channel, Language Arts with Star</li>
+                  </ol>
+                </p>
+                <p>My approach is grounded in clarity, curiosity, and care not just ticking boxes, but helping 
+                  people build confidence through language.</p>
+                <p>If you're curious about what I do, <strong>KEEP SCROLLING.</strong></p>
+           
+        </div>
+
+    </div>
+</section>
+
+<div class="services-container" id="services">
+  <h2>Our Services</h2>
+  
+        <div class="grid">
+          <!-- IELTS -->
+          <div class="card"  id="IELTS" onclick="openModal(0)">
+            <h2>IELTS Preparation</h2>
+            <p>
+              Our IELTS preparation programme is designed to help candidates 
+              achieve their target band score with confidence
+              <span class="ellipsis">...Read more</span>
+            </p>
+            <a class="learn-more"
+              href="https://wa.me/2348136382664?text=Hello%20Star%20Language%20Arts,%20I’m%20interested%20in%20your%20IELTS%20preparation%20classes."
+              target="_blank">Learn more
+            </a>
+          </div>
+
+          <!-- TOEFL -->
+          <div class="card" id="TOEFL" onclick="openModal(1)">
+            <h2>TOEFL Preparation</h2>
+            <p>
+              The TOEFL programme prepares candidates for success in the internet-based test (iBT) through structured academic training<span class="ellipsis">...Read more</span>
+            </p>
+            <a class="learn-more"
+              href="https://wa.me/2348136382664?text=Hello,%20I’d%20like%20to%20enquire%20about%20your%20TOEFL%20preparation%20programme."
+              target="_blank">Learn more
+              </a>
+          </div>
+
+          <!-- PTE -->
+          <div class="card" id="PTE" onclick="openModal(2)">
+            <h2>PTE Preparation</h2>
+            <p>
+              Our PTE preparation is practical, strategy-driven, and focused
+              on performance under timed conditions
+              <span class="ellipsis">...Read more</span>
+            </p>
+            <a class="learn-more"
+              href="https://wa.me/2348136382664?text=Hi%20Star%20Language%20Arts,%20I’m%20interested%20in%20your%20PTE%20coaching."
+              target="_blank">Learn more
+            </a>
+          </div>
+
+          <!-- SAT -->
+          <div class="card" id="SAT" onclick="openModal(3)">
+            <h2>SAT Preparation</h2>
+            <p>
+              The SAT programme strengthens critical reading, writing, and 
+              mathematical reasoning for university admissions
+              <span class="ellipsis">...Read more</span>
+            </p>
+            <a class="learn-more"
+              href="https://wa.me/2348136382664?text=Hello,%20I’d%20like%20to%20know%20more%20about%20your%20SAT%20preparation%20services."
+              target="_blank">Learn more
+            </a>
+          </div>
+
+          <!-- Registrations -->
+          <div class="card" id="Registrations" onclick="openModal(4)">
+            <h2>Registrations</h2>
+            <p>
+              Allow Star Language Arts to manage your English proficiency exam registration with professionalism and care.
+              <span class="ellipsis">...Read more</span>
+            </p>
+           <a class="learn-more"
+              href="https://wa.me/2348136382664?text=Hello%0AI%20would%20like%20Star%20Language%20Arts%20to%20handle%20my%20English%20proficiency%20exam%20registration.%0APlease%20let%20me%20know%20the%20next%20steps."
+              target="_blank" rel="noopener">
+              Learn more
+            </a>
+          </div>
+
+          <!-- EDITING -->
+          <div class="card" id="Editing" onclick="openModal(5)">
+            <h2>Editing & Proofreading</h2>
+            <p>
+              We offer professional editing and proofreading services for academic
+              and professional documents<span class="ellipsis">...Read more</span>
+            </p>
+            <a class="learn-more"
+              href="https://wa.me/2348136382664?text=Hello,%20I%20need%20professional%20editing%20or%20proofreading%20services."
+              target="_blank">Learn more
+            </a>
+          </div>
+
+          <div class="card" id="Language" onclick="openModal(6)">
+            <h2>Language Acquisition</h2>
+            <p>
+              Our language acquisition programme supports learners at different 
+              proficiency levels
+              <span class="ellipsis">...Read more</span>
+            </p>
+            <a class="learn-more"
+              href="https://wa.me/2348136382664?text=Hello%20Star%20Language%20Arts,%20I’d%20like%20to%20learn%20more%20about%20your%20services."
+              target="_blank">Learn more
+            </a>
+          </div>
+
+          <!-- OTHER SERVICES -->
+          <div class="card" id="Other" onclick="openModal(7)">
+            <h2>Other Services</h2>
+            <p>
+              Language coaching, accent softening, public speaking, corporate 
+              communication, and general enquiries
+              <span class="ellipsis">...Read more</span>
+            </p>
+            <a class="learn-more"
+              href="https://wa.me/2348136382664?text=Hello%20Star%20Language%20Arts,%20I%E2%80%99d%20like%20to%20learn%20more%20about%20your%20language%20and%20exam%20preparation%20services."
+              target="_blank" rel="noopener">
+              Learn more
+            </a>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>
+      </div>
+    </div>
+</div>
+
+<footer class="footer" id="contact">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <img src="Images/logo.png" alt="Star Language Arts logo" class="footer-logo">
+            <div class="titles">
+                <p class="name">STAR LANGUAGE ARTS LTD</p>
+                <p class="sub">Proficiency Examinations • Language Acquisition • Editing and Proofreading</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>NAVIGATION</h3>
+            <a href="#home" class="footer-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about" class="footer-link"><i class="fa-solid fa-user"></i> About Us</a>
+            <a href="#services" class="footer-link"><i class="fa-solid fa-box"></i> Services</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Follow US</h3>
+
+            <a href="https://www.youtube.com/@LanguageArtswithStar" target="_blank" rel="noopener noreferrer" class="footer-social">
+                <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+
+            <a href="mailto:starlanguagearts@gmail.com" target="_blank" rel="noopener noreferrer" class="footer-social">
+                <i class="fa-solid fa-envelope"></i> Email Us
+            </a>
+
+            <a href="https://www.linkedin.com/in/abisola-akintomide" target="_blank" rel="noopener noreferrer" class="footer-social">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <p class="footer-bottom">© 2025 STAR LANGUAGE ARTS LTD — All Rights Reserved</p>
+</footer>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
