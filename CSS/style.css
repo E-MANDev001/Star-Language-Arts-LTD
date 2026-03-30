@@ -8,6 +8,80 @@
   --header-height: 76px;
   --page-spacing: 40px;
   --container-padding: 48px;
+  --primary: #1e3a8a;  
+  --text: #333;
+}
+.btn {
+  background: #3b82f6;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1e3a8a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+button, .btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  letter-spacing: 0.3px;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.5px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
 }
 
 html, body {
@@ -529,7 +603,7 @@ nav.primary-nav a:hover::after {
 }
 
 .about-content h2 {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-size: 2rem;
 }
 
